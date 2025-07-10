@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cuenta | Gallardo Games</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="IMG/NADA GALLO.png" alt="Gallardo Games Logo">
+      </div>
+
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="guias.html">Guías y Trucos</a></li>
+        <li><a href="juegos.html">Juegos</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="cuenta.html">Cuenta</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SECCIÓN LOGIN -->
+  <section class="cuenta-container">
+    <div class="login-box">
+      <h2>Iniciar sesión</h2>
+      <input type="text" id="usuario" placeholder="Nombre de Usuario o Correo">
+      <input type="password" id="contrasena" placeholder="Contraseña">
+      <div class="opciones">
+        <label><input type="checkbox"> Recuérdame</label>
+        <a href="#">Olvidé mi Contraseña</a>
+      </div>
+      <button onclick="iniciarSesion()">INICIAR SESIÓN</button>
+      <p id="mensaje"></p>
+    </div>
+
+    <div class="registro-card">
+      <h3>Regístrate para desbloquear ventajas y bonificaciones exclusivas.</h3>
+      <p>¿Aún no eres miembro? No te preocupes, regístrate hoy.</p>
+      <a href="#" class="btn-registrarse">Regístrate</a>
+    </div>
+  </section>
+
+  <!-- MODAL DE SUSCRIPCIÓN -->
+  <div class="modal" id="modal-suscripcion">
+    <div class="modal-contenido">
+      <span class="modal-cerrar" id="cerrar-modal">&times;</span>
+      <h2>Regìstrate :</h2>
+      <p class="descripcion-modal">Se un ¡¡Super Gallo!! y disfruta de lo mejor que tenemos para ofrecerte.</p>
+
+      <div class="beneficios-contenedor">
+        <div class="beneficios-imagen">
+          <img src="IMG/Super Gallardo-Games.png" alt="Ventajas de los planes" />
+        </div>
+        <div class="beneficios-lista">
+          <h4>Todos los planes Plus incluyen:</h4>
+          <ul>
+            <li>✅ Experiencia sin publicidad</li>
+            <li>✅ Maiz Infinito</li>
+            <li>✅ Acceso anticipado a herramientas</li>
+            <li>✅ Papel exclusivo</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="planes">
+        <div class="plan plus-anual destacado">
+          <div class="etiqueta">Más Popular</div>
+          <h3>Plus - Anual</h3>
+          <p class="precio">$2.50<span>/Mes</span></p>
+          <p class="facturacion">Facturado anualmente</p>
+          <button>Suscribete</button>
+        </div>
+
+        <div class="plan plus-mensual">
+          <h3>Plus - Mensual</h3>
+          <p class="precio">$2.99<span>/Mes</span></p>
+          <p class="facturacion">Facturado mensualmente</p>
+          <button>Suscribete</button>
+        </div>
+
+        <div class="plan gratis">
+          <h3>Miembro Gratis</h3>
+          <p class="precio">Sin costo</p>
+          <p class="facturacion">Acceso básico</p>
+          <button>Suscribete</button>
+        </div>
+      </div>
+
+      <p class="terminos">Renovación automática. Puedes cancelar en cualquier momento. <a href="#">Términos</a></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-logo">
+        <img src="IMG/GALLO2.png" alt="Gallardo Games Logo">
+        <p>Gallardo-Games © 2025</p>
+      </div>
+
+      <div class="footer-enlaces">
+        <h4>Sitio</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="guias.html">Guías</a></li>
+          <li><a href="pcs.html">PCs</a></li>
+          <li><a href="juegos.html">Juegos</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="cuenta.html">Cuenta</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="#"><img src="IMG/Youtube.png" alt="YouTube"></a>
+          <a href="#"><img src="IMG/x.avif" alt="X"></a>
+          <a href="#"><img src="IMG/discord.webp" alt="Discord"></a>
+          <a href="#"><img src="IMG/tiktok.png" alt="TikTok"></a>
+          <a href="#"><img src="IMG/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="IMG/faceboock.png" alt="Facebook"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-info">
+        © 2025 Gallardo-Games kikirikiii!.
+        <a href="#">Términos de Servicio</a>
+        <a href="#">Política de uso Aceptable</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+
+      <div class="footer-lang">
+        <select name="idioma" id="idioma">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+        </select>
+      </div>
+    </div>
+  </footer>
+
+  <script src="JS/cuenta.js"></script>
+  <script src="JS/menu.js"></script>
+</body>
+</html>

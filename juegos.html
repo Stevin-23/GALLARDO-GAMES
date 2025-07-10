@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallardo Games</title>
+  <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="IMG/NADA GALLO.png" alt="Gallardo Games Logo">
+      </div>
+
+      <!-- Ícono hamburguesa -->
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="guias.html">Guías y Trucos</a></li>
+        <li><a href="juegos.html">Juegos</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="cuenta.html">Cuenta</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- INTRO -->
+  <section class="intro-guias">
+    <h1>JUEGOS</h1>
+    <p>
+      Aquí encontrarás el listado más completo de videojuegos de todas las plataformas. ¿Buscas información, novedades o si merece la pena comprar algún título en concreto? En esta página encontrarás recopilados todos los juegos que han salido al mercado o que van a salir en un futuro.
+    </p>
+  </section>
+
+  <!-- LISTA DE JUEGOS -->
+  <section class="lista-juegos">
+      <!-- FILTRO POR GÉNERO -->
+  <div class="filtro-genero">
+    <label for="genero">Filtrar por género:</label>
+    <select id="genero" onchange="filtrarGenero()">
+      <option value="todos">Todos</option>
+      <option value="ACCION">Acción</option>
+      <option value="RPG">RPG</option>
+      <option value="DEPORTES">Deportes</option>
+      <option value="PLATAFORMAS">Plataformas</option>
+      <option value="CARRERAS">Carreras</option>
+      <option value="AVENTURA">Aventura</option>
+    </select>
+  </div>
+
+    <div class="juego-card">
+      <div class="juego-info">
+        <div class="juego-tags">
+          <span class="tag">PC</span>
+          <span class="tag">NSW</span>
+          <span class="tag">PS4</span>
+          <span class="tag">XBO</span>
+          <span class="tag">PS5</span>
+          <span class="tag">XBS</span>
+          <span class="categoria">DEPORTES</span>
+        </div>
+        <h3>Tony Hawk's Pro Skater 3+4</h3>
+        <p>
+          Prepárate para el regreso de la legendaria franquicia con Tony Hawk’s Pro Skater 3+4, un videojuego de deportes y skate a cargo de Iron Galaxy Studios y Activision para múltiples plataformas. Una banda sonora que hará temblar tus altavoces y mucho contenido nuevo.
+        </p>
+      </div>
+      <div class="juego-img">
+        <img src="IMG/Tony Hawks.avif" alt="Tony Hawk">
+      </div>
+    </div>
+
+    <div class="juego-card">
+      <div class="juego-info">
+        <div class="juego-tags">
+          <span class="tag">PC</span>
+          <span class="tag">PS5</span>
+          <span class="tag">XBS</span>
+          <span class="categoria">RPG</span>
+        </div>
+        <h3>Persona 4 Revival</h3>
+        <p>
+          Persona 4 Revival, un RPG a cargo de P Studio y Atlus para PC, PS5 y Xbox Series. Una investigación de asesinatos con una historia de autosuperación y contacto con lo arcano. ¡Una nueva vuelta de tuerca!
+        </p>
+      </div>
+      <div class="juego-img">
+        <img src="IMG/Personal 4 Revival.avif" alt="Persona 4">
+      </div>
+    </div>
+
+    <div class="juego-card">
+      <div class="juego-info">
+        <div class="juego-tags">
+          <span class="tag">PC</span>
+          <span class="tag">PS5</span>
+          <span class="tag">XBS</span>
+          <span class="categoria">ACCION</span>
+        </div>
+        <h3>Invincible VS</h3>
+        <p>
+          Invincible VS es un brutal juego de acción y lucha de 3 contra 3 a cargo de Quarter Up y Skybound Games para PC, PlayStation 5 y Xbox Series con superhéroes ambientado en el universo de Invencible, donde puedes luchar hasta la muerte con un equipo formado por los personajes más aclamados en ubicaciones icónicas.
+        </p>
+      </div>
+      <div class="juego-img">
+        <img src="IMG/INVICIBLE VS.avif" alt="Invincible VS">
+      </div>
+    </div>
+    </div>
+    <div class="juego-card">
+      <div class="juego-info">
+        <div class="juego-tags">
+          <span class="tag">PC</span>
+          <span class="tag">XBS</span>
+          <span class="categoria">ACCION</span>
+        </div>
+        <h3>Grounded 2</h3>
+        <p>
+          Grounded 2 es un videojuego de acción y supervivencia a cargo de Obsidian Entertainment y Xbox Game Studios para PC y Xbox Series. Has vuelto a encoger, pero ahora el mundo es mucho más grande. Sobrevive a un mundo abierto en expansión en solitario o con amigos. Fabrica armas y armaduras y construye bases mientras exploras el parque a lomos de leales insectos. Descubre misterios ocultos y enfréntate a amenazas inesperadas, pero debes saber que hay algo más ahí fuera... y no te ha olvidado.
+        </p>
+      </div>
+            <div class="juego-img">
+        <img src="IMG/GROUNDED 2.avif" alt="Tony Hawk">
+      </div>
+    </div>
+
+      <div class="juego-card">
+      <div class="juego-info">
+        <div class="juego-tags">
+          <span class="tag">PC</span>
+          <span class="tag">PS5</span>
+          <span class="tag">XBS</span>
+          <span class="categoria">PLATAFORMAS</span>
+        </div>
+        <h3>Super Meat Boy 3D</h3>
+        <p>
+         Super Meat Boy 3D es un durísimo juego de plataformas a cargo de Sluggerfly y Team Meat para PC, PlayStation 5 y Xbox Series en el que encarnas (nunca mejor dicho) a un cubo de carne que trata de salvar a su novia (que está hecha de vendas) de un malvado feto metido en un frasco... ¡En 3D!
+        </p>
+      </div>
+      <div class="juego-img">
+        <img src="IMG/SUPER MEAT BOY 3D.avif" alt="Tony Hawk">
+      </div>
+    </div>
+
+          <div class="juego-card">
+      <div class="juego-info">
+        <div class="juego-tags">
+          <span class="tag">PC</span>
+          <span class="tag">PS5</span>
+          <span class="tag">XBS</span>
+          <span class="categoria">ACCION</span>
+          <span class="categoria">AVENTURA</span>
+        </div>
+        <h3>Beast of Reincarnation</h3>
+        <p>
+        Beast of Reincarnation es una aventura de acción a cargo de Game Freak y Fictions para PC, PlayStation 5 y Xbox Series. En un Japón posapocalíptico, una tierra consumida por la corrupción y poblada de criaturas monstruosas, la última esperanza de la humanidad está en manos de Emma, una paria maldita, y Koo, su fiel compañero peludo.
+        </p>
+      </div>
+      <div class="juego-img">
+        <img src="IMG/BEAST OF REINCARNATION.avif" alt="Tony Hawk">
+      </div>
+    </div>
+
+              <div class="juego-card">
+      <div class="juego-info">
+        <div class="juego-tags">
+          <span class="tag">SW2</span>
+          <span class="categoria">CARRERAS</span>
+        </div>
+        <h3>Mario Kart World </h3>
+        <p>
+        Mario Kart World es un juego de karts desarrollado y publicado por Nintendo para Switch 2. Nintendo reinventa su popular saga de carreras para todos los públicos con un mundo abierto, 24 corredores y nuevos modos como Supervivencia y Modo libre, con nuevos vehículos, escenarios que puedes explorar con libertad y personajes inéditos, ofreciendo la experiencia Mario Kart más ambiciosa hasta la fecha.
+        </p>
+      </div>
+      <div class="juego-img">
+        <img src="IMG/MARIOKART.webp" alt="Tony Hawk">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-logo">
+        <img src="IMG/GALLO2.png" alt="Gallardo Games Logo">
+        <p>Gallardo-Games © 2025</p>
+      </div>
+
+      <div class="footer-enlaces">
+        <h4>Sitio</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="guias.html">Guías</a></li>
+          <li><a href="pcs.html">PCs</a></li>
+          <li><a href="juegos.html">Juegos</a></li>
+          <li><a href="noticias.html">Noticias</a></li>
+          <li><a href="cuenta.html">Cuenta</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Síguenos</h4>
+        <div class="social-icons">
+          <a href="#"><img src="IMG/Youtube.png" alt="YouTube"></a>
+          <a href="#"><img src="IMG/x.avif" alt="X"></a>
+          <a href="#"><img src="IMG/discord.webp" alt="Discord"></a>
+          <a href="#"><img src="IMG/tiktok.png" alt="TikTok"></a>
+          <a href="#"><img src="IMG/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="IMG/faceboock.png" alt="Facebook"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-info">
+        © 2025 Gallardo-Games kikirikiii!.
+        <a href="#">Términos de Servicio</a>
+        <a href="#">Política de uso Aceptable</a>
+        <a href="#">Política de Privacidad</a>
+      </div>
+
+      <div class="footer-lang">
+        <select name="idioma" id="idioma">
+          <option value="es">Español</option>
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+        </select>
+      </div>
+    </div>
+  </footer>
+  <script src="JS/genero.js"></script>
+  <script src="JS/menu.js"></script>
+
+</body>
+</html>
